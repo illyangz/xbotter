@@ -1,6 +1,12 @@
 "use client";
 import { useState } from "react";
-import { Clipboard, ChevronDown, ChevronUp, ArrowLeft } from "lucide-react";
+import {
+  Clipboard,
+  ChevronDown,
+  ChevronUp,
+  ArrowLeft,
+  Code,
+} from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Link from "next/link";
@@ -107,19 +113,26 @@ export default function TwitterBotDocs() {
       <Section title="Installation" id="installation">
         <ol className="list-decimal pl-5">
           <li className="mb-2">{`Clone the repository or download the script.`}</li>
+          <CodeBlock code={`https://github.com/illyangz/xbotter.git`} />
           <li className="mb-2">
-            {`Install the required dependencies: Remember that the prerequisites
-            is openai, but can be swapped.`}
-            <CodeBlock code="npm install dotenv axios cron fs path readline twitter-api-v2 openai" />
+            {`Install the required dependencies:`}
+            <CodeBlock code="npm install" />
           </li>
-          <li>
-            {`Create a .env file in the project root and add your API keys:`}
+          <li className="mb-2">
+            {`Create a .env file in the root of your directory with the following values. Note the model used here
+            is openai, but can be swapped.`}{" "}
             <CodeBlock
               code={`TWITTER_API_KEY=your_twitter_api_key
 TWITTER_API_SECRET=your_twitter_api_secret
 TWITTER_ACCESS_TOKEN=your_twitter_access_token
 TWITTER_ACCESS_SECRET=your_twitter_access_secret
 OPENAI_API_KEY=your_openai_api_key`}
+            />
+          </li>
+          <li>
+            {`Use curl method to authenticate your & test your connection with the Twitter API using your Bearer Token`}
+            <CodeBlock
+              code={`"curl -X GET "https://api.twitter.com/2/users/me" \ -H "Authorization: Bearer YOUR_BEARER_TOKEN"`}
             />
           </li>
         </ol>
