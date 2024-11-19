@@ -60,13 +60,10 @@ export default function TwitterBotDocs() {
 
   return (
     <div className="container mx-auto px-4 py-8 font-[family-name:var(--font-geist-mono)]">
-      <div className="flex justify-between">
-        <h1 className="text-4xl font-bold mb-8">XBotter Documentation</h1>
-        <Link href="/">
-          <Button variant="outline" className="mb-8">
-            <ArrowLeft className="mr-2 h-4 w-4" /> Return to Home
-          </Button>
-        </Link>
+      <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
+        <h1 className="text-4xl font-bold mb-4 md:mb-0">
+          XBotter Documentation
+        </h1>
       </div>
 
       <div
@@ -246,6 +243,14 @@ OPENAI_API_KEY=your_openai_api_key`}
           service. Use responsibly and at your own risk.`}
         </p>
       </Section>
+      <Link href="/">
+        <Button
+          variant="outline"
+          className="mb-4 md:mb-0 md:ml-4 w-full md:w-auto flex items-center justify-center"
+        >
+          <ArrowLeft className="mr-2" /> Return
+        </Button>
+      </Link>
     </div>
   );
 }
