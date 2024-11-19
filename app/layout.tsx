@@ -16,7 +16,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   title: "XBotter",
-  description: "A Script to Automate Twitter Posts",
+  description: "A Script to Automate & Generate Twitter Posts",
 };
 
 export default function RootLayout({
