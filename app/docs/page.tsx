@@ -74,35 +74,35 @@ export default function TwitterBotDocs() {
       >
         <p className="font-bold">⚠️ CAUTION</p>
         <p>
-          This bot is designed to generate and post controversial and
-          provocative content. Using such a bot might violate Twitter&apos;s
-          terms of service and could lead to account suspension. Proceed at your
-          own risk.
+          {`This bot is designed to generate and post controversial and
+          provocative content. Using such a bot might violate Twitter's terms of
+          service and could lead to account suspension. Proceed at your own
+          risk.`}
         </p>
       </div>
 
       <Section title="Prerequisites" id="prerequisites">
-        <p>Before setting up the bot, ensure you have the following:</p>
+        <p>{`Before setting up the bot, ensure you have the following:`}</p>
         <ul className="list-disc pl-5 mt-2">
-          <li>Node.js installed on your system</li>
-          <li>A Twitter Developer account with API keys</li>
+          <li>{`Node.js installed on your system`}</li>
+          <li>{`A Twitter Developer account with API keys`}</li>
           <li>
-            An OpenAI API key || Claude API key || Any other text completion API
-            key
+            {`An OpenAI API key (paid) || Claude API key (free) || Mistral (Heavy on CPU) || Any other text completion API
+            key`}
           </li>
         </ul>
       </Section>
 
       <Section title="Installation" id="installation">
         <ol className="list-decimal pl-5">
-          <li className="mb-2">Clone the repository or download the script.</li>
+          <li className="mb-2">{`Clone the repository or download the script.`}</li>
           <li className="mb-2">
-            Install the required dependencies: Remember that the prerequisites
-            is openai, but can be swapped.
+            {`Install the required dependencies: Remember that the prerequisites
+            is openai, but can be swapped.`}
             <CodeBlock code="npm install dotenv axios cron fs path readline twitter-api-v2 openai" />
           </li>
           <li>
-            Create a .env file in the project root and add your API keys:
+            {`Create a .env file in the project root and add your API keys:`}
             <CodeBlock
               code={`TWITTER_API_KEY=your_twitter_api_key
 TWITTER_API_SECRET=your_twitter_api_secret
@@ -117,115 +117,115 @@ OPENAI_API_KEY=your_openai_api_key`}
       <Section title="Configuration" id="configuration">
         <ol className="list-decimal pl-5">
           <li className="mb-2">
-            Modify the tweetTopics array in the script to include your desired
-            topics.
+            {`Modify the tweetTopics array in the script to include your desired
+              topics.`}
           </li>
           <li className="mb-2">
-            Adjust the cron schedule in the cronTweet variable if you want to
-            change the tweet frequency.
+            {`Adjust the cron schedule in the cronTweet variable if you want to
+            change the tweet frequency.`}
           </li>
           <li>
-            If needed, modify the generateTweetContent function to adjust the
-            prompt or OpenAI model settings.
+            {`If needed, modify the generateTweetContent function to adjust the
+            prompt or OpenAI model settings.`}
           </li>
         </ol>
       </Section>
 
       <Section title="Usage" id="usage">
-        <p>To start the bot, run:</p>
+        <p>{`To start the bot, run:`}</p>
         <CodeBlock code="node your_script_name.js" />
         <p className="mt-4">The bot will:</p>
         <ol className="list-decimal pl-5">
-          <li>Generate three tweet options every hour</li>
-          <li>Prompt you to choose one or regenerate</li>
-          <li>Post the selected tweet to Twitter</li>
-          <li>Log the posted tweet</li>
+          <li>{`Generate three tweet options every hour`}</li>
+          <li>{`Prompt you to choose one or regenerate`}</li>
+          <li>{`Post the selected tweet to Twitter`}</li>
+          <li>{`Log the posted tweet`}</li>
         </ol>
-        <p className="mt-4">To stop the bot, press Ctrl+C in the terminal.</p>
+        <p className="mt-4">{`To stop the bot, press Ctrl+C in the terminal.`}</p>
       </Section>
 
       <Section title="p2 Commands" id="p2-commands">
         <p>
-          Here are some useful p2 commands for managing your bot in the
-          terminal:
+          {`Here are some useful p2 commands for managing your bot in the
+          terminal:`}
         </p>
-        <h3 className="font-semibold mt-4 mb-2">Logs</h3>
+        <h3 className="font-semibold mt-4 mb-2">{`Logs`}</h3>
         <CodeBlock code="p2 logs" />
-        <p className="mt-2 mb-4">View the most recent logs for your bot.</p>
+        <p className="mt-2 mb-4">{`View the most recent logs for your bot.`}</p>
 
         <CodeBlock code="p2 logs --lines 100" />
-        <p className="mt-2 mb-4">View the last 100 lines of logs.</p>
+        <p className="mt-2 mb-4">{`View the last 100 lines of logs.`}</p>
 
         <CodeBlock code="p2 logs --follow" />
         <p className="mt-2 mb-4">
-          Follow the logs in real-time (similar to 'tail -f').
+          {`Follow the logs in real-time (similar to 'tail -f')`}.
         </p>
 
-        <h3 className="font-semibold mt-4 mb-2">Other Useful Commands</h3>
+        <h3 className="font-semibold mt-4 mb-2">{`Other Useful Commands`}</h3>
         <CodeBlock code="p2 list" />
-        <p className="mt-2 mb-4">List all running p2 processes.</p>
+        <p className="mt-2 mb-4">{`List all running p2 processes.`}</p>
 
         <CodeBlock code="p2 stop twitter-bot" />
         <p className="mt-2 mb-4">
-          Stop the Twitter bot process (replace 'twitter-bot' with your actual
-          process name).
+          {`Stop the Twitter bot process (replace 'twitter-bot' with your actual
+          process name).`}
         </p>
 
         <CodeBlock code="p2 restart twitter-bot" />
-        <p className="mt-2 mb-4">Restart the Twitter bot process.</p>
+        <p className="mt-2 mb-4">{`Restart the Twitter bot process.`}</p>
 
         <CodeBlock code="p2 delete twitter-bot" />
-        <p className="mt-2 mb-4">Delete the Twitter bot process from p2.</p>
+        <p className="mt-2 mb-4">{`Delete the Twitter bot process from p2.`}</p>
 
         <CodeBlock code="p2 monit" />
         <p className="mt-2 mb-4">
-          Open the p2 monitoring interface to view CPU and memory usage.
+          {`Open the p2 monitoring interface to view CPU and memory usage.`}
         </p>
       </Section>
 
       <Section title="Customization" id="customization">
         <ul className="list-disc pl-5">
           <li>
-            To change the tweet generation style, modify the tweetStyles array
-            in the generateTweetContent function.
+            {`To change the tweet generation style, modify the tweetStyles array
+            in the generateTweetContent function.`}
           </li>
           <li>
-            To adjust the similarity threshold for avoiding duplicate tweets,
-            modify the value in the isSimilarTweet function.
+            {`To adjust the similarity threshold for avoiding duplicate tweets,
+            modify the value in the isSimilarTweet function.`}
           </li>
         </ul>
       </Section>
       <Section title="Customization" id="customization">
         <ul className="list-disc pl-5">
           <li>
-            To change the tweet generation style, modify the tweetStyles array
-            in the generateTweetContent function.
+            {`To change the tweet generation style, modify the tweetStyles array
+            in the generateTweetContent function.`}
           </li>
           <li>
-            To adjust the similarity threshold for avoiding duplicate tweets,
-            modify the value in the isSimilarTweet function.
+            {`To adjust the similarity threshold for avoiding duplicate tweets,
+            modify the value in the isSimilarTweet function.`}
           </li>
         </ul>
       </Section>
 
       <Section title="Troubleshooting" id="troubleshooting">
-        <p>If you encounter issues:</p>
+        <p>{`If you encounter issues:`}</p>
         <ol className="list-decimal pl-5">
-          <li>Check your API keys in the .env file</li>
-          <li>Ensure all dependencies are correctly installed</li>
-          <li>Check the console for error messages</li>
+          <li>{`Check your API keys in the .env file`}</li>
+          <li>{`Ensure all dependencies are correctly installed`}</li>
+          <li>{`Check the console for error messages`}</li>
         </ol>
         <p className="mt-4">
-          For persistent problems, refer to the documentation of the used
-          libraries or seek help in the project&apos;s support channels.
+          {`For persistent problems, refer to the documentation of the used
+          libraries or seek help in the project&apos;s support channels.`}
         </p>
       </Section>
 
       <Section title="Disclaimer" id="disclaimer">
         <p>
-          This bot is for educational purposes only. The authors are not
+          {`This bot is for educational purposes only. The authors are not
           responsible for any misuse or violations of Twitter&apos;s terms of
-          service. Use responsibly and at your own risk.
+          service. Use responsibly and at your own risk.`}
         </p>
       </Section>
     </div>
