@@ -1,5 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 export default function Home() {
   return (
@@ -20,21 +28,56 @@ export default function Home() {
           />
           Learn
         </Link>
-        <Link
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://www.reddit.com/r/Automate/comments/1e1ytsu/i_made_an_automation_to_organically_grow_on/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </Link>
+        <DropdownMenu>
+          <DropdownMenuTrigger asChild>
+            <Link
+              className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+              href="https://www.reddit.com/r/Automate/comments/1e1ytsu/i_made_an_automation_to_organically_grow_on/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Image
+                aria-hidden
+                src="/window.svg"
+                alt="Window icon"
+                width={16}
+                height={16}
+              />
+              Examples
+            </Link>
+          </DropdownMenuTrigger>
+          <DropdownMenuContent className="w-56">
+            <DropdownMenuLabel>More Examples</DropdownMenuLabel>
+            <DropdownMenuSeparator />
+            <DropdownMenuItem asChild>
+              <Link
+                href="https://www.ryancarmody.dev/blog/generate-twitter-api-keys-and-tokens"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Twitter API Keys and Tokens
+              </Link>
+            </DropdownMenuItem>
+            <DropdownMenuItem asChild>
+              <Link
+                href="https://www.youtube.com/watch?v=V7LEihbOv3Y"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Fireship Youtube Video
+              </Link>
+            </DropdownMenuItem>
+            <DropdownMenuItem asChild>
+              <Link
+                href="https://www.reddit.com/r/Automate/comments/1e1ytsu/i_made_an_automation_to_organically_grow_on/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Reddit Thread
+              </Link>
+            </DropdownMenuItem>
+          </DropdownMenuContent>
+        </DropdownMenu>
         <Link
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
           href="https://x.com/illyangz"
@@ -76,11 +119,10 @@ export default function Home() {
           </video>
           <div className=""></div>
         </div>
-        <div className="flex gap-8 justify-between items-center flex-col md:flex-row sm:flex-col sm:mt-10 ">
+        <div className="flex gap-4 justify-between items-center flex-col md:flex-row sm:flex-col sm:mt-10 md:ml-16 sm:ml-24">
           <Link
             className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
             href="/payment"
-            target="_blank"
             rel="noopener noreferrer"
           >
             <Image

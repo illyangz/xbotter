@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Clipboard, ChevronDown, ChevronUp, ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import Link from "next/link";
 
 export default function TwitterBotDocs() {
   const [openSection, setOpenSection] = useState<string | null>(
@@ -61,13 +62,24 @@ export default function TwitterBotDocs() {
     <div className="container mx-auto px-4 py-8 font-[family-name:var(--font-geist-mono)]">
       <div className="flex justify-between">
         <h1 className="text-4xl font-bold mb-8">XBotter Documentation</h1>
-        <a href="/">
+        <Link href="/">
           <Button variant="outline" className="mb-8">
             <ArrowLeft className="mr-2 h-4 w-4" /> Return to Home
           </Button>
-        </a>
+        </Link>
       </div>
 
+      <div
+        className="bg-green-100 border-l-4 border-green-500 text-green-700 p-4 mb-8"
+        role="alert"
+      >
+        <p className="font-bold">Thanks and References</p>
+        <p className="mt-2">
+          Strong reference to <strong>Ryan Carmody</strong> for the video and
+          tutorial, and special thanks to
+          <strong> Gabe</strong> for the constant support.
+        </p>
+      </div>
       <div
         className="bg-yellow-100 border-l-4 border-yellow-500 text-yellow-700 p-4 mb-8"
         role="alert"
@@ -80,7 +92,6 @@ export default function TwitterBotDocs() {
           risk.`}
         </p>
       </div>
-
       <Section title="Prerequisites" id="prerequisites">
         <p>{`Before setting up the bot, ensure you have the following:`}</p>
         <ul className="list-disc pl-5 mt-2">
