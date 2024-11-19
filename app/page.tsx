@@ -1,11 +1,12 @@
 import Image from "next/image";
 import VideoBackground from "@/components/video";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <header className="row-start-1 flex gap-6 flex-wrap items-center justify-center">
-        <a
+        <Link
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
           href="https://developer.x.com/en/docs/x-api/early-access"
           target="_blank"
@@ -19,8 +20,8 @@ export default function Home() {
             height={16}
           />
           Learn
-        </a>
-        <a
+        </Link>
+        <Link
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
           href="https://www.reddit.com/r/Automate/comments/1e1ytsu/i_made_an_automation_to_organically_grow_on/"
           target="_blank"
@@ -34,8 +35,8 @@ export default function Home() {
             height={16}
           />
           Examples
-        </a>
-        <a
+        </Link>
+        <Link
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
           href="https://x.com/illyangz"
           target="_blank"
@@ -49,7 +50,7 @@ export default function Home() {
             height={16}
           />
           Contact
-        </a>
+        </Link>
       </header>
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
         <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
@@ -77,7 +78,7 @@ export default function Home() {
           <div className=""></div>
         </div>
         <div className="flex gap-8 justify-between items-center flex-col md:flex-row sm:flex-col sm:mt-10 ">
-          <a
+          <Link
             className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
             href="/payment"
             target="_blank"
@@ -91,21 +92,21 @@ export default function Home() {
               height={20}
             />
             Buy Script
-          </a>
-          <a
+          </Link>
+          <Link
             className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
             href="/docs"
             rel="noopener noreferrer"
           >
             Documentation
-          </a>
-          <a
+          </Link>
+          <Link
             className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
             href="https://discord.gg/AA5HypzP"
             rel="noopener noreferrer"
           >
             Join Discord
-          </a>
+          </Link>
         </div>
       </main>
     </div>
