@@ -1,12 +1,6 @@
 "use client";
 import { useState } from "react";
-import {
-  Clipboard,
-  ChevronDown,
-  ChevronUp,
-  ArrowLeft,
-  Code,
-} from "lucide-react";
+import { Clipboard, ChevronDown, ChevronUp, ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Link from "next/link";
