@@ -61,7 +61,7 @@ export default function TwitterBotDocs() {
   return (
     <div className="container mx-auto px-4 py-8 font-[family-name:var(--font-geist-mono)]">
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
-        <h1 className="text-4xl font-bold mb-4 md:mb-0">
+        <h1 className="text-4xl font-bold mb-8 md:mb-0">
           XBotter Documentation
         </h1>
       </div>
@@ -70,7 +70,6 @@ export default function TwitterBotDocs() {
         className="bg-green-100 border-l-4 border-green-500 text-green-700 p-4 mb-8"
         role="alert"
       >
-        <p className="font-bold">Thanks and References</p>
         <p className="mt-2">
           Strong reference to <strong>Ryan Carmody</strong> for the video and
           tutorial, and special thanks to
@@ -232,14 +231,14 @@ OPENAI_API_KEY=your_openai_api_key`}
         </ol>
         <p className="mt-4">
           {`For persistent problems, refer to the documentation of the used
-          libraries or seek help in the project&apos;s support channels.`}
+          libraries or seek help in the project's support channels.`}
         </p>
       </Section>
 
       <Section title="Disclaimer" id="disclaimer">
         <p>
           {`This bot is for educational purposes only. The authors are not
-          responsible for any misuse or violations of Twitter&apos;s terms of
+          responsible for any misuse or violations of Twitter's terms of
           service. Use responsibly and at your own risk.`}
         </p>
       </Section>
