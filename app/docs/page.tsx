@@ -61,8 +61,8 @@ export default function TwitterBotDocs() {
   return (
     <div className="container mx-auto px-4 py-8 font-[family-name:var(--font-geist-mono)]">
       <div className="flex flex-col md:flex-row justify-between items-start md:items-center">
-        <h1 className="text-4xl font-bold mb-8 md:mb-0">
-          XBotter Documentation
+        <h1 className="text-4xl font-bold mb-6 md:mb-6">
+          ` {`XBotter Documentation`}`{" "}
         </h1>
       </div>
 
@@ -70,6 +70,7 @@ export default function TwitterBotDocs() {
         className="bg-green-100 border-l-4 border-green-500 text-green-700 p-4 mb-8"
         role="alert"
       >
+        <p className="font-bold">Thanks and References</p>
         <p className="mt-2">
           Strong reference to <strong>Ryan Carmody</strong> for the video and
           tutorial, and special thanks to
@@ -245,7 +246,7 @@ OPENAI_API_KEY=your_openai_api_key`}
       <Link href="/">
         <Button
           variant="outline"
-          className="mb-4 md:mb-0 md:ml-4 w-full md:w-auto flex items-center justify-center"
+          className="flex-grow w-full items-center justify-center"
         >
           <ArrowLeft className="mr-2" /> Return
         </Button>
