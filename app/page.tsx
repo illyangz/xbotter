@@ -137,7 +137,7 @@ export default function Home() {
       {/* Rest of the content remains the same */}
       <main className="pt-32 pb-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h1 className="text-4xl sm:text-5xl tracking-tighter font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400 leading-tight py-2">
+          <h1 className="gradient-text text-transparent text-5xl font-bold animate-gradient mb-4 mt-10 tracking-tighter pb-4">
             Supercharge Your X Growth with AI
           </h1>
           <p className="text-md -tracking-wide text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
@@ -164,7 +164,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-4 w-full max-w-xl justify-center">
             <Link
               href="https://github.com/illyangz/xbotter"
-              className="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-blue-600 hover:bg-blue-700 transition-colors duration-200 w-full sm:w-auto"
+              className="inline-flex items-center rounded-xl justify-center px-6 py-3 border-2 border-indigo-100 dark:border-indigo-800 hover:shadow-sm dark:hover:shadow-indigo-800/50 transition-transform transform hover:scale-[1.02] active:scale-95 w-full sm:w-auto"
             >
               <Image
                 src="/vercel.svg"
@@ -177,21 +177,21 @@ export default function Home() {
             </Link>
             <Link
               href="/docs"
-              className="inline-flex items-center justify-center px-6 py-3 border border-gray-300 dark:border-gray-600 text-base font-medium rounded-lg bg-white dark:bg-gray-800 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors duration-200 w-full sm:w-auto"
+              className="inline-flex items-center rounded-xl justify-center px-6 py-3 border-2 border-indigo-100 dark:border-indigo-800 hover:shadow-sm dark:hover:shadow-indigo-800/50 transition-transform transform hover:scale-[1.02] active:scale-95 w-full sm:w-auto"
             >
-              View Documentation
+              Documentation
+            </Link>
+            <Link
+              href="https://discord.gg/AA5HypzP"
+              className="inline-flex items-center rounded-xl justify-center px-6 py-3 border-2 border-indigo-100 dark:border-indigo-800 hover:shadow-sm dark:hover:shadow-indigo-800/50 transition-transform transform hover:scale-[1.02] active:scale-95 w-full sm:w-auto"
+            >
+              Join our Discord Community →
             </Link>
           </div>
-          <Link
-            href="https://discord.gg/AA5HypzP"
-            className="inline-flex items-center justify-center px-6 py-3 text-base font-medium text-blue-600 dark:text-blue-400 hover:text-blue-500 dark:hover:text-blue-300 transition-colors duration-200"
-          >
-            Join our Discord Community →
-          </Link>
         </div>
 
         <div className="mt-24 grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="p-6 rounded-lg border border-gray-200 dark:border-gray-800">
+          <div className="p-6 rounded-xl border border-indigo-100 dark:border-indigo-800">
             <div className="w-12 h-12 bg-blue-100 dark:bg-blue-900 rounded-lg flex items-center justify-center mb-4">
               <svg
                 className="w-6 h-6 text-blue-600 dark:text-blue-400"
@@ -212,7 +212,7 @@ export default function Home() {
               Set up in minutes and start growing your audience automatically.
             </p>
           </div>
-          <div className="p-6 rounded-lg border border-gray-200 dark:border-gray-800">
+          <div className="p-6 rounded-xl border border-indigo-100 dark:border-indigo-800">
             <div className="w-12 h-12 bg-purple-100 dark:bg-purple-900 rounded-lg flex items-center justify-center mb-4">
               <svg
                 className="w-6 h-6 text-purple-600 dark:text-purple-400"
@@ -233,7 +233,7 @@ export default function Home() {
               Use any AI model and customize the behavior to match your style.
             </p>
           </div>
-          <div className="p-6 rounded-lg border border-gray-200 dark:border-gray-800">
+          <div className="p-6 rounded-xl border border-indigo-100 dark:border-indigo-800">
             <div className="w-12 h-12 bg-green-100 dark:bg-green-900 rounded-lg flex items-center justify-center mb-4">
               <svg
                 className="w-6 h-6 text-green-600 dark:text-green-400"
