@@ -86,8 +86,8 @@ export default function TwitterBotDocs() {
     <>
       <Navbar />
       <div className="max-w-4xl mx-auto px-4 py-6 sm:py-12 font-sans">
-        <div className="text-center mb-8 sm:mb-12">
-          <h1 className="gradient-text text-transparent text-3xl sm:text-4xl md:text-5xl font-bold animate-gradient mb-2 sm:mb-4 mt-6 sm:mt-10">
+        <div className="text-center mb-8 sm:mb-12 mt-12">
+          <h1 className="gradient-text text-transparent text-5xl font-bold animate-gradient mt-24">
             XBotter Docs
           </h1>
           <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
@@ -260,8 +260,8 @@ OPENAI_API_KEY=your_openai_api_key`}
             variant="outline"
             className="flex-grow w-full items-center justify-center rounded-lg mb-4 border-2 border-indigo-100 dark:border-indigo-800 hover:shadow-sm dark:hover:shadow-indigo-800/50 transition-shadow"
           >
-            <ArrowLeft className="mr-2 text-xl text-indigo-900" />
-            <p className="text-indigo-900">Return</p>
+            <ArrowLeft className="mr-2 text-xl text-indigo-800" />
+            <p className="text-indigo-800">Return</p>
           </Button>
         </Link>
       </div>
