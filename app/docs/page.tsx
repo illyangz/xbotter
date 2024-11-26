@@ -98,8 +98,10 @@ export default function TwitterBotDocs() {
         <div className="bg-green-50 dark:bg-green-900/30 border-l-4 border-green-500 text-green-800 dark:text-green-200 p-3 sm:p-4 mb-6 sm:mb-8 rounded-r-lg text-sm sm:text-base">
           <p className="font-bold">Thanks and References</p>
           <p className="mt-2">
-            Inspired by <strong>Ryan Carmody</strong>'s tutorial and{" "}
-            <strong>Gabe</strong>'s support
+            {`Inspired by`} <strong>Ryan Carmody</strong>
+            {`'s tutorial and `}
+            <strong>Gabe</strong>
+            {`'s support`}
           </p>
         </div>
 
