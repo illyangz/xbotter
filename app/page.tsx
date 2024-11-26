@@ -182,7 +182,7 @@ export default function Home() {
               Documentation
             </Link>
             <Link
-              href="https://discord.gg/AA5HypzP"
+              href="https://discord.gg/jhxw74AA"
               className="inline-flex items-center rounded-xl justify-center px-6 py-3 border-2 border-indigo-100 dark:border-indigo-800 hover:shadow-sm dark:hover:shadow-indigo-800/50 transition-transform transform hover:scale-[1.02] active:scale-95 w-full sm:w-auto"
             >
               Join our Discord Community →
