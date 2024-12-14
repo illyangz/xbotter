@@ -127,7 +127,7 @@ export default function TwitterBotDocs() {
         <Section title="Installation" id="installation">
           <ol className="list-decimal pl-5">
             <li className="mb-2">{`Clone the repository or download the script.`}</li>
-            <CodeBlock code={`https://github.com/illyangz/xbotter.git`} />
+            <CodeBlock code={`https://github.com/illyangz/yanga-twitter-bot`} />
             <li className="mb-2">
               {`Install the required dependencies:`}
               <CodeBlock code="npm install" />
